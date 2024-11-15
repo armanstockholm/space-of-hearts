@@ -1,4 +1,4 @@
-import TER from "../Terreced.webp";
+import TER from "../Terreced.png";
 
 function Content() {
   return (

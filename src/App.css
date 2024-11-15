@@ -5,6 +5,8 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .App-header {
@@ -28,10 +30,11 @@
 
 .Logo {
   max-height: 12vh;
-  width: fit-content;
   border-radius: 50%;
   margin: 10%;
   cursor: pointer;
+  max-width: 100%;
+  object-fit: cover;
 
 }
 
@@ -176,6 +179,7 @@
   margin: 5px;
   padding: 20px;
   max-height: 5vh;
+  margin-top: -10px;
 }
 
 @media (max-width: 600px) {
