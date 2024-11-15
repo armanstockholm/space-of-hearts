@@ -1,4 +1,4 @@
-import SOH from "../Logo2 SOH.png";
+import SOH from "../LogoSOH.png";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
