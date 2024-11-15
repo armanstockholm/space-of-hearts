@@ -1,7 +1,7 @@
 {
   "name": "soh",
   "version": "0.1.0",
-  "homepage": "https://armanstockholm.github.io/space-of-hearts",
+  "homepage": "https://www.spaceofhearts.uk",
   "private": true,
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
