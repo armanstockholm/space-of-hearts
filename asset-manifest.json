@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/space-of-hearts/static/css/main.2b39600d.css",
-    "main.js": "/space-of-hearts/static/js/main.cb712f0f.js",
-    "static/js/453.1b19e725.chunk.js": "/space-of-hearts/static/js/453.1b19e725.chunk.js",
-    "static/media/Terreced.png": "/space-of-hearts/static/media/Terreced.74efa3f3afa7ecfa84e7.png",
-    "static/media/Logo2 SOH.png": "/space-of-hearts/static/media/Logo2 SOH.c883e264c8c60523b445.png",
-    "index.html": "/space-of-hearts/index.html",
-    "main.2b39600d.css.map": "/space-of-hearts/static/css/main.2b39600d.css.map",
-    "main.cb712f0f.js.map": "/space-of-hearts/static/js/main.cb712f0f.js.map",
-    "453.1b19e725.chunk.js.map": "/space-of-hearts/static/js/453.1b19e725.chunk.js.map"
+    "main.css": "/static/css/main.2b39600d.css",
+    "main.js": "/static/js/main.d44afa88.js",
+    "static/js/453.1b19e725.chunk.js": "/static/js/453.1b19e725.chunk.js",
+    "static/media/Terreced.png": "/static/media/Terreced.74efa3f3afa7ecfa84e7.png",
+    "static/media/Logo2 SOH.png": "/static/media/Logo2 SOH.c883e264c8c60523b445.png",
+    "index.html": "/index.html",
+    "main.2b39600d.css.map": "/static/css/main.2b39600d.css.map",
+    "main.d44afa88.js.map": "/static/js/main.d44afa88.js.map",
+    "453.1b19e725.chunk.js.map": "/static/js/453.1b19e725.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b39600d.css",
-    "static/js/main.cb712f0f.js"
+    "static/js/main.d44afa88.js"
   ]
 }
