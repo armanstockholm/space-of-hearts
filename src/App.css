@@ -7,21 +7,51 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App-header {
+  background-color: #4d4d50;
+  max-height: 15vh;
+  display: flex;
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: transform 0.6s ease;
+}
+
+.App-header.hidden {
+  transform: translateY(-100%);
+}
+
+.Logo {
+  max-height: 12vh;
+  width: fit-content;
+  border-radius: 50%;
+  margin: 10%;
+  cursor: pointer;
+
+}
+
+.HeadLine {
+  font-size: 300%;
+  margin: 3%;
+  margin-top: 1%;
+  font-family: serif;
+}
+
+@media (max-width: 600px) {
+  .HeadLine {
+    font-size: 200%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 400px) {
+  .HeadLine {
+    font-size: 20px;
+  }
 }
 
 .App-link {
@@ -35,4 +65,193 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Component-container {
+  display: flex;
+  flex-wrap: wrap; /* Tillåter radbrytning */
+  gap: 16px; /* Mellanrum mellan komponenterna */
+}
+
+.Item {
+  flex: 1 1 200px; /* Justerar storleken på komponenten */
+  min-width: 200px; /* Minsta bredd på komponenterna */
+  max-width: 300px; /* Maxbredd på komponenterna (valfritt) */
+  padding: 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.MainContent {
+  margin: 2%;
+  max-width: 95%;
+  border-style: double;
+  background-color: rgb(249, 249, 246);
+  margin-left: 40px;
+}
+
+@media (max-width: 600px){
+  .MainContent {
+    margin: 2%;
+  }
+}
+
+.Footer {
+  border-color: #4d4d50;
+  height: 100px;
+  width: 100%;
+  background-color: #4d4d50;
+  max-height: 24vh;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  bottom: 0;
+  left: 0;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  position: static;
+}
+
+.Social-icons {
+  display: flex;
+  justify-content: left;
+  gap: 20px; /* Avstånd mellan ikonerna */
+}
+
+.IconFacebook {
+  color: #fff;
+  font-size: 40px; /* Justera storlek på ikonerna */
+  transition: color 0.3s ease;
+}
+
+.IconFacebook:hover {
+  color: #1da1f2; /* Färg för hover (exempel Twitter-blå) */
+}
+
+.IconInstagram {
+  color: #fff;
+  font-size: 40px; /* Justera storlek på ikonerna */
+  transition: color 0.3s ease;
+}
+
+.IconInstagram:hover {
+  color: rgb(240, 211, 211);
+}
+
+.IconX {
+  color: #fff;
+  font-size: 40px; /* Justera storlek på ikonerna */
+  transition: color 0.3s ease;
+}
+
+.IconX:hover {
+  color: rgb(43, 33, 33);
+}
+
+.LinksParent {
+  display: flex;
+  justify-content: right;
+  align-items: baseline;
+  padding: 16px;
+  margin: 30px;
+}
+
+.AboutText {
+  color: rgb(218, 211, 212);
+  text-decoration: none;
+}
+
+.round-link {
+  padding: 12px 24px;
+  border-radius: 50%; /* Makes it round */
+  background-color: #0d1f31; /* Background color for the button */
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 5px;
+  padding: 20px;
+  max-height: 5vh;
+}
+
+@media (max-width: 600px) {
+  .round-link {
+    font-size: 13px;
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .round-link {
+    font-size: 10px;
+    margin-left: -10px;
+    margin-top: 1px;
+  }
+}
+
+.round-link:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly grows on hover */
+}
+
+.round-link:active {
+  transform: scale(0.95); /* Slightly shrinks when clicked */
+}
+
+.AboutPage {
+  margin: 30px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* Container för bilden och texten */
+.image-container {
+  position: relative;
+  width: fit-content; /* Anpassar till bildens storlek */
+  margin: 0 auto;
+  margin-left: 30%;
+  margin-bottom: 10%;
+}
+
+/* Bilden */
+.ImgContent {
+  display: block;
+  width: 60%; /* Justera efter behov */
+  height: auto;
+}
+
+/* Texten som visas ovanpå bilden */
+.text-overlay {
+  position: absolute;
+  top: 10%; /* Vertikal centrering */
+  left: 50%; /* Horisontell centrering */
+  left: 30%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Justerar positionen för att centrera texten */
+  color: white; /* Vit text för kontrast */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Halvtransparent bakgrund för bättre läsbarhet */
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px; /* Gör bakgrundens hörn rundade */
+}
+
+@media (max-width: 600px){
+  .text-overlay {
+    font-size: 8px;
+    padding: 5px 10px;
+  }
+  
 }

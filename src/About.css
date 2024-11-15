@@ -1,0 +1,113 @@
+/* General styling for the About page container */
+.text-container {
+  max-width: 800px; /* Limit width for better readability */
+  margin: 0 auto; /* Center the content */
+  padding: 2rem 1.5rem;
+  line-height: 1.6; /* Improve readability */
+  font-family: Arial, sans-serif; /* Replace with a custom font if desired */
+  color: #333; /* Soft black for easy reading */
+  min-height: 500px;
+}
+
+/* Headings */
+.text-container h1 {
+  font-size: 2.5rem;
+  color: #0d1f31;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.text-container h2 {
+  font-size: 1.75rem;
+  color: #0d1f31;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-container h3 {
+  font-size: 1.5rem;
+  color: #0d1f31;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraph styling */
+.text-container p {
+  font-size: 1.1rem;
+  color: #555; /* Softer color for readability */
+  margin-bottom: 1.5rem;
+  text-align: justify; /* Align text for a clean look */
+}
+
+/* Styling for important text (emphasis) */
+.text-container em {
+  font-style: italic;
+  color: #007bff; /* Accent color */
+}
+
+.text-container strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for lists */
+.text-container ul,
+.text-container ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-container li {
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+/* Links in the About text */
+.text-container a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.text-container a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Blockquote styling */
+.text-container blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #0d1f31;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  background-color: #f9f9f9;
+}
+
+/* Small text for additional notes */
+.text-container small {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 1rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .text-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-container p,
+  .text-container li {
+    font-size: 1rem;
+  }
+}
