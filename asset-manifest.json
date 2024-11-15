@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.65bec12f.css",
+    "main.css": "/static/css/main.7976a975.css",
     "main.js": "/static/js/main.a9b2bc40.js",
     "static/js/453.1b19e725.chunk.js": "/static/js/453.1b19e725.chunk.js",
     "static/media/Terreced.png": "/static/media/Terreced.74efa3f3afa7ecfa84e7.png",
     "static/media/LogoSOH.png": "/static/media/LogoSOH.c883e264c8c60523b445.png",
     "index.html": "/index.html",
-    "main.65bec12f.css.map": "/static/css/main.65bec12f.css.map",
+    "main.7976a975.css.map": "/static/css/main.7976a975.css.map",
     "main.a9b2bc40.js.map": "/static/js/main.a9b2bc40.js.map",
     "453.1b19e725.chunk.js.map": "/static/js/453.1b19e725.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65bec12f.css",
+    "static/css/main.7976a975.css",
     "static/js/main.a9b2bc40.js"
   ]
 }
