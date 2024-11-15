@@ -73,10 +73,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
 ----------------Developer-----------------
 To test production code before npm run deploy
 
 npm run build
 npm install -g serve (If the server is not installed)
-in the build folder run: serve -s build
+serve -s build
