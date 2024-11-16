@@ -9,12 +9,6 @@ html
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  max-width: 100%;
-  object-fit: cover;
-}
 
 .App-header {
   background-color: #4d4d50;
@@ -31,20 +25,20 @@ html
   transition: transform 0.6s ease;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2em; /* Extra padding för bättre utseende */
+  padding: 0 1em; /* Extra padding för bättre utseende */
   overflow-y: auto;
 }
 
 .HeadLine {
-  font-size: clamp(30px, 6vw, 48px);
+  font-size: clamp(10px, 4vw, 40px);
   font-family: serif;
 }
 
 @media (max-width: 768px) {
   .App-header {
     gap: 2em;
-    padding: 1em;
-    overflow-y: auto;
+    margin: 0%;
+    padding: 0%;
   }
 }
 
@@ -62,27 +56,28 @@ html
   padding: 0.5em;
   height: 20em;
   width: 20em;
-  margin: 5%;
+  margin: 2%;
 }
 
 @media (max-width: 800px) {
   .round-link {
-    height: 12em;
-    width: 12em;
+    height: 6em;
+    width: 6em;
+    margin: 0.2em;
   }
 }
 
 @media (max-width: 600px) {
   .round-link {
-    height: 8em;
-    width: 8em;
+    height: 6em;
+    width: 6em;
   }
 }
 
 @media (max-width: 400px) {
   .round-link {
-    height: 2em;
-    width: 2em;
+    height: 1em;
+    width: 1em;
   }
 }
 
@@ -96,13 +91,16 @@ html
 }
 
 .Logo {
-  max-height: 12vh;
-  border-radius: 50%;
-  margin: 10%;
-  cursor: pointer;
-  max-width: 100%;
-  object-fit: cover;
+  max-height: 10vh; /* Håller höjden inom 12% av viewport-höjden */
+  border-radius: 50%; /* Gör loggan rund */
+  margin: 2%; /* Lägger till lite utrymme runt loggan */
+  cursor: pointer; /* Behåller pekar-ikonen */
+  object-fit: contain; /* Behåller proportioner */
+  width: auto; /* Gör att bredden anpassas proportionellt */
+  min-height: 6vh;
 }
+
+
 
 .App-link {
   color: #61dafb;

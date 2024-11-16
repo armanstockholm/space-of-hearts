@@ -51,6 +51,9 @@ function Header() {
       <Link to="/about" className="round-link" onClick={scrollToTop} >
           About
         </Link>
+        <Link to="/contact" className="round-link" onClick={scrollToTop} >
+          Contact
+        </Link>
       </div>
 
     </header>
