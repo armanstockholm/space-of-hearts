@@ -3,15 +3,21 @@
 
 <head>
     <script>
-        // Läs URL:en och omdirigera till rätt sökväg
+        // Hämta hela URL:en
         var path = window.location.pathname;
+        var newPath = "";
+
+        // Kontrollera URL och omdirigera till rätt hash-baserad rutt
         if (path.startsWith("/contact")) {
-            window.location.href = "/#/contact";
+            newPath = "/#/contact";
         } else if (path.startsWith("/about")) {
-            window.location.href = "/#/about";
+            newPath = "/#/about";
         } else {
-            window.location.href = "/";
+            newPath = "/#/"; // Standardrutt (startsidan)
         }
+
+        // Omdirigera till index.html med hash-baserad rutt
+        window.location.replace(newPath);
     </script>
 </head>
 
