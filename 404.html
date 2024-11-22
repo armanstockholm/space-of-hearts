@@ -2,11 +2,21 @@
 <html>
 
 <head>
-    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+        // Läs URL:en och omdirigera till rätt sökväg
+        var path = window.location.pathname;
+        if (path.startsWith("/contact")) {
+            window.location.href = "/#/contact";
+        } else if (path.startsWith("/about")) {
+            window.location.href = "/#/about";
+        } else {
+            window.location.href = "/";
+        }
+    </script>
 </head>
 
 <body>
-    <p>Redirecting to the homepage...</p>
+    <p>Redirecting...</p>
 </body>
 
 </html>
