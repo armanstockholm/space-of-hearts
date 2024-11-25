@@ -38,10 +38,27 @@ const ContactForm = () => {
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
-      // Formulär är korrekt ifyllt
-      setSuccessMessage("Your message has been sent successfully!");
-      setFormData({ name: "", email: "", message: "" });
-      setErrors({});
+      // Formulär är korrekt ifyllt  
+      fetch("https://formsubmit.co/f5b846d9c2e939952e334b9364ab1ce9", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }).then((response) => {
+        if (response.ok) {
+            setSuccessMessage("Your message has been sent successfully!");
+            setFormData({ name: "", email: "", message: "" });
+            setErrors({});
+        } else{
+            setSuccessMessage("Something went wrong. Please try again.")
+        }
+      })
+      .catch((error)=>{
+        console.error("Error:", error);
+        setSuccessMessage("Something went wrong. Please try again.");
+      })
+
     }
   };
 

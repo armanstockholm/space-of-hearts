@@ -27,13 +27,6 @@ function MainContent() {
           of hearts.
         </p>
 
-        <p>
-          Whether you’re seeking a new home, a commercial space, or an
-          investment opportunity, Space of Hearts Ltd is here to guide you every
-          step of the way. We invite you to join us on this journey of creating
-          spaces that inspire and uplift, turning properties into places where
-          memories are made and hearts are at home.
-        </p>
       </div>
 
       <Content />

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // Hämta hela URL:en
+        var path = window.location.pathname;
+        var newPath = "";
+
+        // Kontrollera URL och omdirigera till rätt hash-baserad rutt
+        if (path.startsWith("/contact")) {
+            newPath = "/#/contact";
+        } else if (path.startsWith("/about")) {
+            newPath = "/#/about";
+        } else {
+            newPath = "/#/"; // Standardrutt (startsidan)
+        }
+
+        // Omdirigera till index.html med hash-baserad rutt
+        window.location.replace(newPath);
+    </script>
+</head>
+
+<body>
+    <p>Redirecting...</p>
+</body>
+
+</html>
